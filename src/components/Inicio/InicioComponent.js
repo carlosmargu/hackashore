@@ -3,22 +3,24 @@ import './InicioComponent.css';
 import './header-teamwork.svg';
 import { Link } from 'react-router-dom';
 import carrusel from "../Comunicados/carrusel";
-import {Swiper, SwiperSlide} from "swiper/swiper-react";
+import {Swiper, SwiperSlide} from 'swiper/react';
+
+
 class Inicio extends Component {
 
 render(){
-    const I = {
-        imagen:{
-            width:"50%",
-            height: "75vh",
-        },
-    };
+  const I = {
+      imagen:{
+          width:"100%",
+          height: "100%",
+      },
+  };
   return (
     <div id="header" className="header">
         <div className="header-content">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-7">
+                    <div className="col-lg-8">
                         <div>
                             <Swiper
                                 spaceBetween={0}
@@ -29,9 +31,7 @@ render(){
                                 onSlideChange={() => console.log("slide change")}
                                 onSwipper={(swiper) => console.log(swiper)}
                             >
-                                <SwiperSlide>
-                                    <img style={I.imagen} src="https://i.ibb.co/Y79Ndnr/1.png" alt=""/>
-                                </SwiperSlide>
+
 
                                 <SwiperSlide>
                                     <img style={I.imagen} src="https://i.ibb.co/GpSfcfb/2.png" alt=""/>
@@ -44,8 +44,8 @@ render(){
                         </div>
                     </div>
                     <div className="line-division"></div>
-                    <div className="col-lg-4 register-zone">
-                        <img src="www.google.com" alt="AQUI VA EL LOGO"/>
+                    <div className="col-lg-3 register-zone">
+                        <img src="https://i.ibb.co/w4BR7fN/logoHS.png" alt="AQUI VA EL LOGO"/>
                         <Link className="btn-solid-lg page-scroll" to="/acerca">Registrate</Link>
                         <Link className="btn-solid-lg page-scroll" to="/acerca">Login</Link>
                     </div>

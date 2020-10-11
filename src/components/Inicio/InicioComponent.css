@@ -10,9 +10,9 @@ h1 {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #0AB4E0;
+	border: 0.125rem solid #f07939;
 	border-radius: 2rem;
-	background-color: #0AB4E0;
+	background-color: #f07939;
 	color: #fff;
 	font: 700 0.75rem/0 "Raleway", sans-serif;
 	text-decoration: none;
@@ -21,7 +21,7 @@ h1 {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #0AB4E0;
+	color: #f07939;
 	text-decoration: none;
 }
 
@@ -30,8 +30,8 @@ h1 {
 }
 
 .header .header-content {
-	padding-top: 8rem;
-	padding-bottom: 4rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	text-align: center;
 }
 
