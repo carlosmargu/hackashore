@@ -77,7 +77,11 @@ class Header extends Component {
         <Navbar dark expand="md">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
-              <NavbarBrand className="mr-auto" href="#"></NavbarBrand>
+              <NavbarBrand className="mr-auto" href="#">
+              <a class="navbar-brand" href="#">
+                  <img src="https://i.ibb.co/vkyCdyv/blanco.png" width="80" height="40" alt=""/>
+                </a>
+              </NavbarBrand>
                 <Collapse isOpen={this.state.isNavOpen} navbar>
 
                     <Nav navbar>
@@ -109,14 +113,23 @@ class Header extends Component {
                         <NavLink className="nav-link"  to='/contacto'> Contacto</NavLink>
                       </NavItem>
                       <NavItem>
+                        <NavLink className="nav-link"  to='/contacto'> Impacto</NavLink>
+                      </NavItem>
+                      <NavItem>
                         <NavLink className="nav-link"  to='/acerca'> Sobre nosotros</NavLink>
                       </NavItem>
                       </>)}
 
                     </Nav>
                     <Nav className="ml-auto" navbar>
-                        <NavItem>
+                        <NavItem className="separa">
                             <Button color={this.props.isLogged?"danger":"success"} onClick={this.props.isLogged ? this.props.handleLogout : this.toggleModal}>{this.props.isLogged ? "Logout" : "Login"}</Button>
+                        </NavItem>
+                        <NavItem className="separa">
+                            <Button color={this.props.isLogged?"danger":"success"} onClick={this.props.isLogged ? this.props.handleLogout : this.toggleModal}>{this.props.isLogged ? "Logout" : "Login"}</Button>
+                        </NavItem>
+                        <NavItem className="separa">
+                            <Button color={"light"} onClick={()=>this.props}>DONAR</Button>
                         </NavItem>
                     </Nav>
                   </Collapse>
