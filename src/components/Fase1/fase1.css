@@ -1,0 +1,19 @@
+.fase h1, .fase{ font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size:
+    60px; font-style: normal; font-variant: normal; font-weight: 700; color:#f07939;
+background-color: white;}
+
+.quien1{
+background-color:white;
+width: 29.5%;
+height: 20%;
+text-align: center;
+padding:10% 0;
+
+}
+
+.video {
+display: inline-block;
+font-size: 20px;
+color: #000;
+text-align: center;
+}
