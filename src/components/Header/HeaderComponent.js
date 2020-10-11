@@ -87,22 +87,13 @@ class Header extends Component {
                     <Nav navbar>
                     {this.props.isLogged? (   <>
                       <NavItem>
-                        <NavLink className="nav-link" to='/index'>Inicio</NavLink>
+                        <NavLink className="nav-link" to='/index'>Fase I</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink className="nav-link" to='/semanas'>Semanas</NavLink>
+                        <NavLink className="nav-link" to='/semanas'>Fase II</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink className="nav-link"  to='/menu'> Actividades Entregadas</NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink className="nav-link" to='/contacto'> Contacto</NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink className="nav-link" to='/tools'> Herramientas</NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink className="nav-link" to='/comunicados'> Comunicados</NavLink>
+                        <NavLink className="nav-link"  to='/menu'>Fase III</NavLink>
                       </NavItem>
                       </>
                       ) : (<>
@@ -123,7 +114,7 @@ class Header extends Component {
                     </Nav>
                     <Nav className="ml-auto" navbar>
                         <NavItem className="separa">
-                            <Button color={this.props.isLogged?"danger":"success"} onClick={this.props.isLogged ? this.props.handleLogout : this.toggleModal}>{this.props.isLogged ? "Logout" : "Login"}</Button>
+                            <Button color={"warning"} onClick="">Registrarse</Button>
                         </NavItem>
                         <NavItem className="separa">
                             <Button color={this.props.isLogged?"danger":"success"} onClick={this.props.isLogged ? this.props.handleLogout : this.toggleModal}>{this.props.isLogged ? "Logout" : "Login"}</Button>
@@ -137,7 +128,7 @@ class Header extends Component {
             </Navbar>
 
           <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-              <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
+              <ModalHeader toggle={this.toggleModal} className="verde">LOGIN</ModalHeader>
               <ModalBody>
                   <Form onSubmit={this.handleLogin}>
                     <FormGroup>
@@ -157,7 +148,7 @@ class Header extends Component {
                             Remember me
                         </Label>
                     </FormGroup>
-                    <Button type="submit" value="submit" color="primary" onClick={this.handleLogin}>Login</Button>
+                    <Button type="submit" value="submit" color="outline-success" onClick={this.handleLogin}>Login</Button>
                   </Form>
               </ModalBody>
           </Modal>
