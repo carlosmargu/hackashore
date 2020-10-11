@@ -31,21 +31,21 @@ render(){
                                 onSlideChange={() => console.log("slide change")}
                                 onSwipper={(swiper) => console.log(swiper)}
                             >
-
-
-                                <SwiperSlide>
-                                    <img style={I.imagen} src="https://i.ibb.co/GpSfcfb/2.png" alt=""/>
+                                <SwiperSlide className="carrusel">
+                                    <img style={I.imagen} src="https://i.ibb.co/23R5Z77/1.png" alt=""/>
                                 </SwiperSlide>
-
                                 <SwiperSlide>
-                                    <img style={I.imagen} src="https://i.ibb.co/Pj62Sch/3.png" alt=""/>
+                                    <img style={I.imagen} src="https://i.ibb.co/yFzzm3R/2.png" alt=""/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img style={I.imagen} src="https://i.ibb.co/mCDLbpj/3.png" alt=""/>
                                 </SwiperSlide>
                             </Swiper>
                         </div>
                     </div>
                     <div className="line-division"></div>
                     <div className="col-lg-3 register-zone">
-                        <img src="https://i.ibb.co/w4BR7fN/logoHS.png" alt="AQUI VA EL LOGO"/>
+                        <img src="https://i.ibb.co/w4BR7fN/logoHS.png" alt="AQUI VA EL LOGO" className="imagen"/>
                         <Link className="btn-solid-lg page-scroll" to="/acerca">Registrate</Link>
                         <Link className="btn-solid-lg page-scroll" to="/acerca">Login</Link>
                     </div>

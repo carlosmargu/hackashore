@@ -17,6 +17,8 @@ h1 {
 	font: 700 0.75rem/0 "Raleway", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
+	margin: 25px 0px auto 25%;
+	width: inherit;
 }
 
 .btn-solid-lg:hover {
@@ -50,13 +52,15 @@ h1 {
 }
 .line-division{
 	background-color: gray;
-	height: 350px;
-	width: 1px;
+	height: 450px;
+	width: 3px;
 	margin: 0 35px;
 }
-.btn-solid-lg{
-	margin: 25px 0 0 0;
-	width: 100%;
+
+
+.imagen{
+	height: 50%;
+	width:150% ;
 }
 
 @media only screen and (max-width: 992px) {
