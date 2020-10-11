@@ -2,18 +2,45 @@ import React, { Component } from 'react';
 import './InicioComponent.css';
 import './header-teamwork.svg';
 import { Link } from 'react-router-dom';
-
+import carrusel from "../Comunicados/carrusel";
+import {Swiper, SwiperSlide} from "swiper/swiper-react";
 class Inicio extends Component {
+
 render(){
+    const I = {
+        imagen:{
+            width:"50%",
+            height: "75vh",
+        },
+    };
   return (
     <div id="header" className="header">
         <div className="header-content">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7">
-                        <div className="text-container">
-                            <h1>Menos hambre MAS alegria</h1>
-                            <p className="p-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel augue est. Aliquam sagittis ligula erat, eget pulvinar massa condimentum quis. Sed dignissim scelerisque nisi, id luctus odio maximus at. Nulla lorem libero, aliquet eget tempor ut, bibendum eu turpis. Ut ac accumsan risus. Quisque rhoncus mauris dui, a fringilla tortor blandit et. Cras eget turpis dignissim libero fringilla dictum sed eu metus. Donec sit amet turpis non orci hendrerit suscipit. Integer volutpat erat quam, quis pellentesque tortor sodales at. Nam iaculis erat purus, sit amet facilisis ipsum placerat sit amet. Praesent sit amet mi dolor. Phasellus vitae dui tempor, imperdiet ex ut, tristique lectus. </p>
+                        <div>
+                            <Swiper
+                                spaceBetween={0}
+                                slidesPerView={1}
+                                loop={true}
+                                pagination={{ clickable: true }}
+                                autoplay={{ delay:4000 }}
+                                onSlideChange={() => console.log("slide change")}
+                                onSwipper={(swiper) => console.log(swiper)}
+                            >
+                                <SwiperSlide>
+                                    <img style={I.imagen} src="https://i.ibb.co/Y79Ndnr/1.png" alt=""/>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img style={I.imagen} src="https://i.ibb.co/GpSfcfb/2.png" alt=""/>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img style={I.imagen} src="https://i.ibb.co/Pj62Sch/3.png" alt=""/>
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </div>
                     <div className="line-division"></div>
