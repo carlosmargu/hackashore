@@ -19,23 +19,28 @@ class Fase1 extends Component {
                     <div className="fase-name">
                         <h2 className="titulo-fase1">FASE 1</h2>
                     </div>
-                    <div className="fase1-container">
-                        <p className="texto-guia">Se impartiran las jornadas de
-                            sensibilización estudiantil a través de los
-                            contenidos vistos en clase durante las siguientes 3 fases.</p>
-                        <ReactPlayer
-                            url={'https://www.youtube.com/watch?v=Pnp_7IaqW74&t=2734s'}
-                            width='600px'
-                            height='250px'
-                        />
-                        <h3>HAZ COMPLETADO LA FASE 1</h3>
-
-                    </div>
-                </div>
-                <div className="boton-upload">
-                    <Link className="btn-solid-lg3 page-scroll" to="/fase2">Continuar</Link>
-                </div>
-
+                    <div className="video">
+                       <h4 style={{}}>Se impartiran las jornadas de
+                           sensibilización estudiantil a través de los
+                           contenidos vistos en clase durante las siguientes 3 fases.
+                       </h4>
+                       <div className="video1">
+                           {
+                             <ReactPlayer
+                             url={'https://www.youtube.com/watch?v=Pnp_7IaqW74&t=2734s'}
+                             width='600px'
+                             height='250px'
+                         />
+                           }
+                         </div>
+                   </div>
+                       <div className="final">
+                           <h3>HAZ COMPLETADO LA FASE 1</h3>
+                       </div>
+                       <div className="final" style={{padding:"20px"}}>
+                           { <Link className="btn-solid-lg page-scroll" to="/fase2">Continuar</Link>}
+                       </div>
+                  </div>
 
             </>
         );
