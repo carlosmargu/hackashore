@@ -33,7 +33,7 @@ class Fase1 extends Component {
                     </div>
                 </div>
                 <div className="boton-upload">
-                    <Link className="btn-solid-lg3 page-scroll" to="/">Continuar</Link>
+                    <Link className="btn-solid-lg3 page-scroll" to="/fase2">Continuar</Link>
                 </div>
 
 

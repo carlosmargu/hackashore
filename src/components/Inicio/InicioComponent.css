@@ -14,7 +14,8 @@ h1 {
 	border-radius: 2rem;
 	background-color: #f07939;
 	color: #fff;
-	font: 700 0.75rem/0 "Raleway", sans-serif;
+	font: 700 0.75rem/0,  Futura, "Trebuchet MS", Arial, sans-serif;
+	font-weight: bold;
 	text-decoration: none;
 	transition: all 0.2s;
 	margin: 25px 0px auto 25%;
@@ -57,6 +58,9 @@ h1 {
 	margin: 0 35px;
 }
 
+.carrusel{
+	border: 3px solid #f07939;
+}
 
 .imagen{
 	height: 50%;

@@ -117,7 +117,7 @@ class Header extends Component {
                             <Button color={"warning"} onClick="">Registrarse</Button>
                         </NavItem>
                         <NavItem className="separa">
-                            <Button color={this.props.isLogged?"danger":"success"} onClick={this.props.isLogged ? this.props.handleLogout : this.toggleModal}>{this.props.isLogged ? "Logout" : "Login"}</Button>
+                            <Button color={this.props.isLogged?"danger":"success"} onClick={this.props.isLogged ? this.props.handleLogout : this.toggleModal}>{this.props.isLogged ? "Salir" : "Ingresar"}</Button>
                         </NavItem>
                         <NavItem className="separa">
                             <Button color={"light"} onClick={()=>this.props}>DONAR</Button>
@@ -128,16 +128,16 @@ class Header extends Component {
             </Navbar>
 
           <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-              <ModalHeader toggle={this.toggleModal} className="verde">LOGIN</ModalHeader>
+              <ModalHeader toggle={this.toggleModal} className="verde">INICIAR SESIÓN</ModalHeader>
               <ModalBody>
                   <Form onSubmit={this.handleLogin}>
                     <FormGroup>
-                        <Label htmlFor="username">Username</Label>
+                        <Label htmlFor="username">Usuario</Label>
                         <Input type="text" id="username" name="username"
                             innerRef={(input) => this.username = input} />
                     </FormGroup>
                     <FormGroup>
-                        <Label htmlFor="password">Password</Label>
+                        <Label htmlFor="password">Contraseña</Label>
                         <Input type="password" id="password" name="password"
                             innerRef={(input) => this.password = input}  />
                     </FormGroup>
@@ -145,10 +145,10 @@ class Header extends Component {
                         <Label check>
                             <Input type="checkbox" name="remember"
                             innerRef={(input) => this.remember = input}  />
-                            Remember me
+                            Recordarme
                         </Label>
                     </FormGroup>
-                    <Button type="submit" value="submit" color="outline-success" onClick={this.handleLogin}>Login</Button>
+                    <Button type="submit" value="submit" color="outline-success" onClick={this.handleLogin}>Ingresar</Button>
                   </Form>
               </ModalBody>
           </Modal>

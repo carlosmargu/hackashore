@@ -21,7 +21,7 @@ render(){
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8">
-                        <div>
+                        <div className="carrusel">
                             <Swiper
                                 spaceBetween={0}
                                 slidesPerView={1}
@@ -31,7 +31,7 @@ render(){
                                 onSlideChange={() => console.log("slide change")}
                                 onSwipper={(swiper) => console.log(swiper)}
                             >
-                                <SwiperSlide className="carrusel">
+                                <SwiperSlide>
                                     <img style={I.imagen} src="https://i.ibb.co/23R5Z77/1.png" alt=""/>
                                 </SwiperSlide>
                                 <SwiperSlide>
@@ -46,8 +46,8 @@ render(){
                     <div className="line-division"></div>
                     <div className="col-lg-3 register-zone">
                         <img src="https://i.ibb.co/w4BR7fN/logoHS.png" alt="AQUI VA EL LOGO" className="imagen"/>
-                        <Link className="btn-solid-lg page-scroll" to="/acerca">Registrate</Link>
-                        <Link className="btn-solid-lg page-scroll" to="/acerca">Login</Link>
+                        <Link className="btn-solid-lg page-scroll" to="/acerca">Registrarse</Link>
+                        <Link className="btn-solid-lg page-scroll" to="/acerca">Ingresar</Link>
                     </div>
                 </div>
             </div>
