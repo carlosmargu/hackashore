@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Jumbotron} from 'reactstrap';
 import './HomeComponent.css'
-import axios from 'axios'
 import {Link} from "react-router-dom";
 
 class Home extends Component {
@@ -10,16 +8,6 @@ class Home extends Component {
         this.state = {
             tareas: []
         }
-    }
-
-    componentDidMount() {
-        axios.get(`https://api.npoint.io/4529b70a8255f93d8392`, {})
-            .then(res => {
-                this.setState({tareas: res.data})
-            })
-            .catch((error) => {
-                console.log(error)
-            })
     }
 
     render() {
@@ -43,7 +31,7 @@ class Home extends Component {
                         <h2 className="fase-title-dos">FASE 2</h2>
                         <p className="progres">Progreso</p>
                         <p className="incompleto">Incompleto</p>
-                        <Link className="btn-solid-lg2 page-scroll ingresar" to="/">Ingresar</Link>
+                        <Link className="btn-solid-lg2 page-scroll ingresar" to="/fase2">Ingresar</Link>
                     </div>
                     <div className="fases">
                         <h2 className="fase-title-tres">FASE 3</h2>

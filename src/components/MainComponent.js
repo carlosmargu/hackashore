@@ -8,6 +8,7 @@ import AboutUs from './Acerca/AboutUsComponent';
 import Comunicados from './Comunicados/Comunicados.js'
 import Semanas from './Semanas/Semanas.js'
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import Fase2 from "./Fase2/Fase2";
 
 class Main extends Component {
 
@@ -46,6 +47,7 @@ class Main extends Component {
          <Route path='/acerca' component={() => <AboutUs />} />
          <Route path='/comunicados' component={() => <Comunicados />} />
          <Route path='/semanas' component={() => <Semanas />} />
+         <Route path='/fase2' component={() => <Fase2 />} />
        </Switch>
        <Footer isLogged={this.state.isLogged}/>
      </div>
