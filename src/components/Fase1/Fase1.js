@@ -33,7 +33,7 @@ class Fase1 extends Component {
                        <div className="video1">
                            {
                              <ReactPlayer
-                             url={'https://www.youtube.com/watch?v=Pnp_7IaqW74&t=2734s'}
+                             url={'https://www.youtube.com/watch?v=wWUI9Jazz9Y'}
                              width='600px'
                              height='250px'
                          />
