@@ -37,7 +37,7 @@ class Home extends Component {
                         <h2 className="fase-title-tres">FASE 3</h2>
                         <p className="progres">Progreso</p>
                         <p className="incompleto">Incompleto</p>
-                        <Link className="btn-solid-lg2 page-scroll ingresar" to="/">Ingresar</Link>
+                        <Link className="btn-solid-lg2 page-scroll ingresar" to="/fase3">Ingresar</Link>
                     </div>
                 </div>
             </>

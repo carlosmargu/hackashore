@@ -87,13 +87,13 @@ class Header extends Component {
                     <Nav navbar>
                     {this.props.isLogged? (   <>
                       <NavItem>
-                        <NavLink className="nav-link" to='/index'>Fase I</NavLink>
+                        <NavLink className="nav-link" to='/fase1'>Fase I</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink className="nav-link" to='/semanas'>Fase II</NavLink>
+                        <NavLink className="nav-link" to='/fase2'>Fase II</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink className="nav-link"  to='/menu'>Fase III</NavLink>
+                        <NavLink className="nav-link"  to='/fase3'>Fase III</NavLink>
                       </NavItem>
                       </>
                       ) : (<>
