@@ -95,6 +95,9 @@ class Header extends Component {
                       <NavItem>
                         <NavLink className="nav-link"  to='/fase3'>Fase III</NavLink>
                       </NavItem>
+                      <NavItem>
+                        <NavLink className="nav-link"  to='/fase3'>PASAPORTE</NavLink>
+                      </NavItem>
                       </>
                       ) : (<>
                       <NavItem>

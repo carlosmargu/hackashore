@@ -3,6 +3,18 @@
     color: #55b848;
 }
 
-.botonfase{
-  width: 500px;
+.btnasas{
+  width: 500px !important;
+  height: 50px;
+}
+
+
+.separaciona{
+  margin-top: 10%;
+}
+
+.mango{
+  transform: scale(0.7);
+  position: relative;
+  top:-160px;
 }

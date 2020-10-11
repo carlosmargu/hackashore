@@ -23,6 +23,12 @@ class Fase1 extends Component {
                        <h4 style={{}}>Se impartiran las jornadas de
                            sensibilización estudiantil a través de los
                            contenidos vistos en clase durante las siguientes 3 fases.
+                           <br></br>
+<br></br>
+                           Adicionalemte en la parte inferiror encontrara un video que reforzara lo visto en clase.
+                            <br></br>
+                            <br></br>
+                           Para avanzar a la siguiente fase debe completar los contenidos vistos en clase y ver el video.
                        </h4>
                        <div className="video1">
                            {
