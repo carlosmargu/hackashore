@@ -48,3 +48,19 @@ h1 {
 .header .p-large {
 	margin-bottom: 1.875rem;
 }
+.line-division{
+	background-color: gray;
+	height: 350px;
+	width: 1px;
+	margin: 0 35px;
+}
+.btn-solid-lg{
+	margin: 25px 0 0 0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+	.line-division{
+		display: none;
+	}
+}
